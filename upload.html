@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Загрузка Лекции</title>
+</head>
+<body>
+    <header>
+        <h1>Образовательная Платформа</h1>
+        <nav>
+            <a href="/">Главная</a>
+            <a href="/upload">Загрузить лекцию</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Загрузите аудиофайл с лекцией</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="lecture" accept="audio/*">
+            <button type="submit">Загрузить</button>
+        </form>
+    </section>
+</body>
+</html>
